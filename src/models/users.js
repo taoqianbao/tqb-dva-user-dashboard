@@ -9,7 +9,8 @@ export default {
         total: null,
         page: null
     },
-    reducers: {  //用来修改数据模型的state
+    reducers: {  
+        //用来修改数据模型的state
         save(state, { payload: { data: list, total, page } }) {
             return { ...state, list, total, page };
         }

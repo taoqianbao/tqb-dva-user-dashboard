@@ -1,10 +1,12 @@
 import dva from 'dva';
+import { browserHistory } from 'dva/router';
 import createLoading from 'dva-loading';
 import './index.css';
 
 // 1. Initialize
 // const app = dva();
 const app = dva({
+    history: browserHistory,
     initialState: {
         products: [
             { name: 'dva', id: 1 },
